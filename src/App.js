@@ -4,6 +4,7 @@ import Header from './components/header';
 import Antrian from './components/antrian';
 import Menu from './components/menu';
 import Banner from './components/banner';
+import ApiBerita from './components/api';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Antrian />
         <Menu />
         <Banner/>
+        <ApiBerita/>
       </ScrollView>
     </View>
   );
