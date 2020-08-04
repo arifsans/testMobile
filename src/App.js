@@ -3,6 +3,7 @@ import {StyleSheet, View, ScrollView, Text, Image} from 'react-native';
 import Header from './components/header';
 import Antrian from './components/antrian';
 import Menu from './components/menu';
+import Banner from './components/banner';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <ScrollView>
         <Antrian />
         <Menu />
+        <Banner/>
       </ScrollView>
     </View>
   );

@@ -9,7 +9,7 @@ import pengaturan from '../../assets/icons/pengaturan.png';
 
 export default function Menu() {
   return (
-    <View style={{height: 160}}>
+    <View style={{height: 160,paddingTop: 10}}>
       {/* menu baris 1 */}
       <View
         style={{
@@ -67,6 +67,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: 100,
     height: 50,
+    alignContent: 'center',
+    justifyContent: 'center',
   },
   bgIcon: {
     width: 57,
@@ -92,5 +94,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  textIcon: {fontSize: 10, fontFamily: 'Rubik-Medium'},
+  textIcon: {fontSize: 10, fontFamily: 'Rubik-Medium', color: '#5A5A5A'},
 });
