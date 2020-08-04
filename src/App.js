@@ -1,24 +1,16 @@
 import React from 'react';
-import {
-  StyleSheet,
-  View,
-  ScrollView,
-} from 'react-native';
+import {StyleSheet, View, ScrollView, Text, Image} from 'react-native';
 import Header from './components/header';
-import {LinearGradient} from expo;
+import Antrian from './components/antrian';
+import Menu from './components/menu';
 
 export default function App() {
   return (
     <View style={styles.mainContainer}>
-      <Header/>
+      <Header />
       <ScrollView>
-        <View>
-          <LinearGradient
-          colors={['#0093DD','#8445A2','#DD127B']}
-          style={{flex:1}}
-          start={{x:0, y:0}}
-          end={{x:1, y:1}}/>
-        </View>
+        <Antrian />
+        <Menu />
       </ScrollView>
     </View>
   );

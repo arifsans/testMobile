@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontFamily: 'Rubik-Medium',
     color: '#B7B7B7',
-    paddingLeft: 20,
+    margin: 17,
   },
 });
