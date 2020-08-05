@@ -1,7 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View, Image} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
+import { ScrollView } from 'react-native-gesture-handler';
 
 export default function Detail({route, navigation}) {
   const {image} = route.params;
@@ -10,7 +9,7 @@ export default function Detail({route, navigation}) {
   const {publishedAt} = route.params;
   const {content} = route.params;
   return (
-    <View>
+    <ScrollView>
       <View style={styles.container}>
         <Image
           source={{
@@ -35,7 +34,7 @@ export default function Detail({route, navigation}) {
           {JSON.parse(JSON.stringify(content))}
         </Text>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
