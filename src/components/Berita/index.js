@@ -1,7 +1,7 @@
 import React from 'react';
 import {Image, Text, View, Linking} from 'react-native';
 
-export default Berita = (props) => (
+export default Berita= (props,{navigation}) => (
   <View style={{paddingBottom: 20}}>
     <View style={{flex: 1}}>
       <Image source={{uri: props.image}} style={{flex: 1, height: 197}} />
@@ -11,7 +11,7 @@ export default Berita = (props) => (
       <Text style={{padding: 8, fontSize: 10}}>{props.description}</Text>
       <Text
         style={{color: '#0093DD', paddingHorizontal: 8, fontSize: 10}}
-        onPress={() => Linking.openURL(props.url)}>
+        onPress={() => navigation.navigate('Detail')}>
         Baca Selengkapnya...
       </Text>
     </View>
