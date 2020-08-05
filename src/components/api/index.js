@@ -56,7 +56,9 @@ export default class ApiBerita extends Component {
                             publishedAt={item.publishedAt}
                             name={item.source.name}
                             title={item.title} 
-                            author={item.author} />
+                            author={item.author} 
+                            content={item.content}/>
+                            
                     }
                     keyExtractor={({title}, _index) => title}
                 />
